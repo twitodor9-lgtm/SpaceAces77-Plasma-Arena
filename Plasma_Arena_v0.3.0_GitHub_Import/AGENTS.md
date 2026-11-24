@@ -1,0 +1,3 @@
+# Plasma Arena development contract
+Baseline: v0.3.0. Read START_HERE.md, HANDOFF.md, QA_TECHNICAL.md and design/MODULAR_CONTENT_CONTRACT.md.
+Work only on dev/grok-gameplay-v0.4 (create from main if absent). Preserve existing code, JSON catalogs and stable identifiers. No merge or push to main. Do not commit node_modules, credentials or local environment files. Run npm ci and npm run check in plasma-arena; perform real browser playtests with normal keyboard input. Report wins/losses and timings honestly. Update CHANGELOG and HANDOFF, regenerate offline HTML and commit/push milestones. Open a draft PR. See GROK_TASK_v0.4.md.

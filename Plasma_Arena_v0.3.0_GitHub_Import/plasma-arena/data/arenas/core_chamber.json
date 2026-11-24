@@ -1,0 +1,47 @@
+{
+  "id": "core_chamber",
+  "label": "תא הליבה",
+  "blurb": "גוש כבד, אחר כך זיגזג, ולבסוף דופק עם פליטת כור.",
+  "width": 960,
+  "height": 540,
+  "playerSpawn": { "x": 760, "y": 500 },
+  "platforms": [
+    { "x": 48, "y": 400, "w": 180, "h": 16 },
+    { "x": 732, "y": 400, "w": 180, "h": 16 },
+    { "x": 390, "y": 300, "w": 180, "h": 16 }
+  ],
+  "spawnPoints": [
+    { "x": 220, "y": 110 },
+    { "x": 480, "y": 90 },
+    { "x": 740, "y": 120 }
+  ],
+  "waves": [
+    {
+      "banner": "גל 1 — פריחה כבדה",
+      "speedScale": 1,
+      "spawns": [{ "id": "plasma_heavy", "count": 1 }]
+    },
+    {
+      "banner": "גל 2 — כבד וזיגזג",
+      "speedScale": 1.06,
+      "spawns": [
+        { "id": "plasma_heavy", "count": 1 },
+        { "id": "plasma_zig", "count": 1 }
+      ]
+    },
+    {
+      "banner": "גל 3 — דופק וכור",
+      "speedScale": 1.12,
+      "spawns": [
+        { "id": "plasma_pulse", "count": 1 },
+        { "id": "plasma_zig", "count": 1 }
+      ],
+      "events": [{ "delayMs": 2000, "spawns": [{ "id": "plasma_heavy", "count": 1 }] }]
+    }
+  ],
+  "hazards": [
+    { "ref": "barrier_pulse", "x": 250, "y": 168, "w": 26, "h": 332 },
+    { "ref": "moving_beam", "x": 160, "y": 168, "w": 128, "h": 20, "x2": 760 }
+  ],
+  "winCondition": "clear_all_waves"
+}

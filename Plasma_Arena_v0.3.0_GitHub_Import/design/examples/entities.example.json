@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "id": "orb_large",
+      "kind": "plasma",
+      "assetId": "orb_large_placeholder",
+      "hp": 1,
+      "radius": 40,
+      "behaviors": [
+        {
+          "type": "bounce",
+          "speed": 145,
+          "gravity": 560
+        }
+      ],
+      "onDestroyed": {
+        "spawnEntity": "orb_small",
+        "count": 2,
+        "maxGeneration": 1
+      }
+    },
+    {
+      "id": "orb_small",
+      "kind": "plasma",
+      "assetId": "orb_small_placeholder",
+      "hp": 1,
+      "radius": 18,
+      "behaviors": [
+        {
+          "type": "bounce",
+          "speed": 220,
+          "gravity": 560
+        }
+      ],
+      "onDestroyed": {
+        "spawnEntity": null,
+        "count": 0
+      }
+    },
+    {
+      "id": "orb_zigzag",
+      "kind": "plasma",
+      "assetId": "orb_purple_placeholder",
+      "hp": 2,
+      "radius": 24,
+      "behaviors": [
+        {
+          "type": "zigzag",
+          "speed": 110,
+          "period": 1.5
+        }
+      ],
+      "onDestroyed": {
+        "spawnEntity": "orb_small",
+        "count": 2,
+        "maxGeneration": 1
+      }
+    }
+  ]
+}

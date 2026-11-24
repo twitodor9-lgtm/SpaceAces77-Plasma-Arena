@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "hazards": [
+    {
+      "id": "barrier_pulse",
+      "behavior": "timed_barrier",
+      "telegraphMs": 900,
+      "activeMs": 1700,
+      "inactiveMs": 1600,
+      "damage": 1,
+      "assetId": "barrier_placeholder"
+    },
+    {
+      "id": "moving_beam",
+      "behavior": "horizontal_patrol",
+      "speed": 50,
+      "damage": 1,
+      "telegraphMs": 600,
+      "assetId": "beam_placeholder"
+    }
+  ]
+}

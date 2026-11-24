@@ -1,0 +1,47 @@
+{
+  "id": "relay_deck",
+  "label": "סיפון הממסר",
+  "blurb": "אי מרכזי, שני שערים, מוקשים נסחפים ודופק.",
+  "width": 960,
+  "height": 540,
+  "playerSpawn": { "x": 480, "y": 500 },
+  "platforms": [
+    { "x": 36, "y": 430, "w": 150, "h": 16 },
+    { "x": 774, "y": 430, "w": 150, "h": 16 },
+    { "x": 370, "y": 340, "w": 220, "h": 16 }
+  ],
+  "spawnPoints": [
+    { "x": 180, "y": 96 },
+    { "x": 585, "y": 84 },
+    { "x": 790, "y": 96 }
+  ],
+  "waves": [
+    {
+      "banner": "גל 1 — זוג בינוני",
+      "speedScale": 1,
+      "spawns": [{ "id": "plasma_mid", "count": 2 }]
+    },
+    {
+      "banner": "גל 2 — זיגזג ומוקשים",
+      "speedScale": 1.05,
+      "spawns": [
+        { "id": "plasma_zig", "count": 2 },
+        { "id": "mine_drift", "count": 2 }
+      ]
+    },
+    {
+      "banner": "גל 3 — כבד ודופק",
+      "speedScale": 1.1,
+      "spawns": [
+        { "id": "plasma_heavy", "count": 1 },
+        { "id": "plasma_pulse", "count": 1 }
+      ]
+    }
+  ],
+  "hazards": [
+    { "ref": "barrier_pulse", "x": 168, "y": 210, "w": 24, "h": 290 },
+    { "ref": "barrier_pulse", "x": 768, "y": 210, "w": 24, "h": 290 },
+    { "ref": "moving_beam", "x": 220, "y": 230, "w": 110, "h": 18, "x2": 700 }
+  ],
+  "winCondition": "clear_all_waves"
+}

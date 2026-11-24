@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "entities": [
+    {
+      "id": "plasma_heavy",
+      "kind": "plasma",
+      "label": "פריחה כבדה",
+      "assetId": "orb_heavy",
+      "hp": 1,
+      "radius": 46,
+      "score": 150,
+      "contactDamage": 1,
+      "interaction": "normal",
+      "behaviors": [{ "key": "bounce", "speed": 135, "gravity": 740, "restitution": 1 }],
+      "split": { "childId": "plasma_mid", "count": 2 }
+    },
+    {
+      "id": "plasma_mid",
+      "kind": "plasma",
+      "label": "פריחה בינונית",
+      "assetId": "orb_mid",
+      "hp": 1,
+      "radius": 30,
+      "score": 80,
+      "contactDamage": 1,
+      "interaction": "normal",
+      "behaviors": [{ "key": "bounce", "speed": 185, "gravity": 860, "restitution": 1 }],
+      "split": { "childId": "plasma_spark", "count": 2 }
+    },
+    {
+      "id": "plasma_spark",
+      "kind": "plasma",
+      "label": "ניצוץ",
+      "assetId": "orb_spark",
+      "hp": 1,
+      "radius": 16,
+      "score": 40,
+      "contactDamage": 1,
+      "interaction": "brittle",
+      "behaviors": [{ "key": "bounce", "speed": 235, "gravity": 980, "restitution": 1 }],
+      "split": null
+    },
+    {
+      "id": "plasma_zig",
+      "kind": "plasma",
+      "label": "זיגזג",
+      "assetId": "orb_zig",
+      "hp": 2,
+      "radius": 26,
+      "score": 120,
+      "contactDamage": 1,
+      "interaction": "normal",
+      "behaviors": [
+        { "key": "bounce", "speed": 120, "gravity": 700, "restitution": 1 },
+        { "key": "zigzag", "speed": 160, "period": 1.25 }
+      ],
+      "split": { "childId": "plasma_spark", "count": 2 }
+    },
+    {
+      "id": "plasma_pulse",
+      "kind": "plasma",
+      "label": "דופק",
+      "assetId": "orb_pulse",
+      "hp": 2,
+      "radius": 34,
+      "score": 140,
+      "contactDamage": 1,
+      "interaction": "normal",
+      "behaviors": [
+        { "key": "bounce", "speed": 125, "gravity": 720, "restitution": 1 },
+        { "key": "pulse", "burstEveryMs": 2300, "burstMs": 420, "telegraphMs": 420, "burstMul": 1.72 }
+      ],
+      "split": { "childId": "plasma_mid", "count": 2 }
+    },
+    {
+      "id": "mine_drift",
+      "kind": "plasma",
+      "label": "מוקש נסחף",
+      "assetId": "orb_mine",
+      "hp": 1,
+      "radius": 15,
+      "score": 70,
+      "contactDamage": 1,
+      "interaction": "resist_slow",
+      "behaviors": [{ "key": "move_horizontal", "speed": 85, "halfRange": 84, "gravity": 0 }],
+      "split": null
+    }
+  ]
+}

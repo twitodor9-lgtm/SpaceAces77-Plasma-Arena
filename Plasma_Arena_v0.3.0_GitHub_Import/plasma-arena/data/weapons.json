@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "weapons": [
+    {
+      "id": "energy_lance",
+      "label": "חנית אנרגיה",
+      "hint": "פגיעה ישירה כלפי מעלה",
+      "behavior": "projectile",
+      "cooldownMs": 280,
+      "energyCost": 0,
+      "projectile": {
+        "motion": "straight",
+        "speed": 760,
+        "direction": "aim_up",
+        "radius": 6,
+        "lifeMs": 900,
+        "damage": 1,
+        "pierce": 1,
+        "assetId": "lance",
+        "impact": null
+      }
+    },
+    {
+      "id": "pulse_net",
+      "label": "רשת דופק",
+      "hint": "שדה האטה לזמן קצר",
+      "behavior": "projectile",
+      "cooldownMs": 1900,
+      "energyCost": 40,
+      "projectile": {
+        "motion": "straight",
+        "speed": 460,
+        "direction": "aim_up",
+        "radius": 8,
+        "lifeMs": 760,
+        "damage": 0,
+        "pierce": 1,
+        "assetId": "net",
+        "impact": {
+          "behavior": "area_slow",
+          "radius": 92,
+          "durationMs": 1300,
+          "factor": 0.42
+        }
+      }
+    }
+  ]
+}

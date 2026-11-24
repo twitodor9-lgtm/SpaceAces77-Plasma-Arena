@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "assets": [
+    { "id": "orb_heavy", "kind": "procedural", "shape": "circle", "color": "#FF3D8A", "accent": "#FFE3F1", "motif": "double-ring" },
+    { "id": "orb_mid", "kind": "procedural", "shape": "circle", "color": "#3CF0E0", "accent": "#E8FFFC", "motif": "double-ring" },
+    { "id": "orb_spark", "kind": "procedural", "shape": "circle", "color": "#9AF7FF", "accent": "#FFFFFF", "motif": "spark" },
+    { "id": "orb_zig", "kind": "procedural", "shape": "circle", "color": "#B794F6", "accent": "#F4ECFF", "motif": "chevron" },
+    { "id": "orb_pulse", "kind": "procedural", "shape": "circle", "color": "#FF7A59", "accent": "#FFE7A3", "motif": "cross" },
+    { "id": "orb_mine", "kind": "procedural", "shape": "circle", "color": "#FFC857", "accent": "#FF5A36", "motif": "hex" },
+    { "id": "lance", "kind": "procedural", "shape": "line", "color": "#D6FF4A", "accent": "#F4FFD0", "motif": "lance" },
+    { "id": "net", "kind": "procedural", "shape": "ring", "color": "#FFC857", "accent": "#FFF6D8", "motif": "net" },
+    { "id": "barrier", "kind": "procedural", "shape": "rect", "color": "#FF5A36", "accent": "#FFD0C4", "motif": "barrier" },
+    { "id": "beam", "kind": "procedural", "shape": "rect", "color": "#FFC857", "accent": "#FFF1C2", "motif": "beam" },
+    { "id": "platform", "kind": "procedural", "shape": "rect", "color": "#8FA3C8", "accent": "#D5DDED", "motif": "platform" },
+    { "id": "player_ace", "kind": "procedural", "shape": "player", "color": "#E7F2FF", "accent": "#3CF0E0", "motif": "player" }
+  ]
+}

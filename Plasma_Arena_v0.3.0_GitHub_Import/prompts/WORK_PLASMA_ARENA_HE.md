@@ -1,0 +1,10 @@
+# משימת Work — SpaceAces77 Plasma Arena v0.2
+אתה סוכן המשך פיתוח של Plasma Arena, לא Plasma Sea. קרא START_HERE, מסמכי design, audit ו-HANDOFF. התבסס על `plasma-arena/` הקיים; אין לבנות מחדש. שמור checkpoint מקור והוכח שימור יכולות. אין לשנות GitHub/main או לבצע Merge.
+
+1. אמת baseline: Node מתאים, התקן תלויות ייעודיות מתוך package.json של המשחק, צור lockfile מתאים (לא של מעטפת Grok), הרץ typecheck/build ו-QA בדפדפן. רשום כל כשל; אל תטען שגרסה עובדת בלי ראיה.
+2. השלם scripts/inline-dist.mjs ותוצר HTML אופליין עצמאי, או חלופה מקומית מתועדת ללא הורדת תלויות בזמן משחק. ודא שאין בקשות CDN/רשת. בדוק פתיחה אמיתית של התוצר לאחר build.
+3. תקן ממצאי P0/P1 ב-ARCHITECTURE_AUDIT; בדוק גם את יתר הסיכונים. שימור תחושת ארקייד: ירי כלפי מעלה עם הטיה, תנועה וקפיצה, גושים גדולים→בינוניים→קטנים, שלוש משפחות תנועה לפחות, שני נשקים Energy Lance/Pulse Net, שני סוגי hazards עם אזהרה, שתי זירות ושלושה גלים בכל אחת. אנרגיה אופציונלית בלבד וירי בסיסי תמיד זמין.
+4. הפרד התנהגות מתוכן: תיקון registry/טעינת זירות; הוכח הוספת גוש, נשק, גל, hazard וזירה דרך נתונים בלבד. אל תכפה ECS או מנוע משותף. שמור IDs וחוזים. שינויים קטנים עם regression tests.
+5. הוסף QA אמיתי: בדיקות validate לרבות IDs/מעגלים/ערכים, split cap/generation, bounds, wave pending, win/lose/retry, נשקים, grace/telegraph, קלט וניקוי lifecycle. הרץ דפדפן בשתי הזירות: Start, שמאל/ימין, קפיצה, ירי, החלפת נשק, התפצלות, נזק, כל הגלים, ניצחון/כישלון, Retry/Menu. בדוק גם touch, פוקוס, שגיאות קונסול, אופליין. ניתן להשתמש ב-probe לבדיקה מבוקרת אך להבדיל בין gameplay רגיל ל-probe. צלם ראיות. בדוק 90–180 שניות כיעד עיצובי, לא תוצאה מובטחת. כיף ואיזון באישור הבעלים.
+6. הוסף כלי בדיקה מינימליים: hitboxes, telemetry export JSON, אירועי spawn/split/hit/wave/result; התאמה עתידית ל-devtools של SpaceAces בלי לשנות חוזים משותפים. לא לבנות תשתית מסורבלת במקום משחק.
+7. מסור ZIP עצמאי עם משחק אופליין מאומת, קוד מקור מלא, lockfile ייעודי, נתונים, בדיקות, README, PLAY_HE, HOW_TO_ADD_CONTENT_HE, QA_TECHNICAL, HANDOFF, CHANGELOG. פרט PASS/FAIL/NOT TESTED, תקלות שנותרו, נתיב שחזור וממצאי owner QA. אין node_modules ב-ZIP. אין לקבע מיקום קמפיין או החלטות פתוחות מה-GDD.

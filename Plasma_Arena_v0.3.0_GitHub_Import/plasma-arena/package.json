@@ -1,0 +1,22 @@
+{
+  "name": "spaceaces77-plasma-arena",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "description": "SpaceAces77 Plasma Arena v0.1 — standalone arcade prototype. Not Plasma Sea.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5199",
+    "build": "vite build && node scripts/inline-dist.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 5199",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-loader ../audit/resolve-ts.mjs --test ../audit/baseline.test.mjs tests/*.test.mjs",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.3.5"
+  }
+}

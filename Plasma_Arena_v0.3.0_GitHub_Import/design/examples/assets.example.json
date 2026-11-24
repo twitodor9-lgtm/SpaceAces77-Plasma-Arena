@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "orb_large_placeholder",
+      "kind": "procedural",
+      "shape": "circle",
+      "color": "#f268f1"
+    },
+    {
+      "id": "orb_small_placeholder",
+      "kind": "procedural",
+      "shape": "circle",
+      "color": "#8fdbff"
+    },
+    {
+      "id": "orb_purple_placeholder",
+      "kind": "procedural",
+      "shape": "circle",
+      "color": "#9b70f8"
+    },
+    {
+      "id": "lance_placeholder",
+      "kind": "procedural",
+      "shape": "line",
+      "color": "#7effd8"
+    },
+    {
+      "id": "net_placeholder",
+      "kind": "procedural",
+      "shape": "ring",
+      "color": "#efeb9e"
+    },
+    {
+      "id": "barrier_placeholder",
+      "kind": "procedural",
+      "shape": "rect",
+      "color": "#ff7a60"
+    },
+    {
+      "id": "beam_placeholder",
+      "kind": "procedural",
+      "shape": "rect",
+      "color": "#edcc6d"
+    }
+  ]
+}

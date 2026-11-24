@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "arenaSize": {
+    "width": 960,
+    "height": 540
+  },
+  "maxBodies": 18,
+  "maxShots": 10,
+  "maxZones": 4,
+  "defaultArenaId": "core_chamber",
+  "weaponsOrder": [
+    "energy_lance",
+    "pulse_net"
+  ],
+  "player": {
+    "speed": 300,
+    "jumpVelocity": -580,
+    "gravity": 1150,
+    "hull": 3,
+    "iFrameMs": 1000,
+    "width": 36,
+    "height": 52,
+    "coyoteMs": 100,
+    "jumpBufferMs": 120
+  },
+  "split": {
+    "maxGeneration": 4,
+    "childGraceMs": 560,
+    "childPopVelocity": -240,
+    "childSeparation": 36
+  },
+  "spawn": {
+    "telegraphMs": 720,
+    "safeRadius": 160,
+    "staggerMs": 220
+  },
+  "aim": {
+    "influence": 0.42
+  },
+  "energy": {
+    "max": 100,
+    "regenPerSec": 18
+  },
+  "intermissionMs": 1400,
+  "strings": {
+    "title": "PLASMA ARENA",
+    "kicker": "SPACEACES77 · יחידת ניסוי",
+    "subtitle": "התחמקו מגושי הפלזמה, פצלו אותם ופנו את הזירה.",
+    "start": "התחל",
+    "retry": "שוב",
+    "menu": "תפריט",
+    "winTitle": "הזירה נוקתה",
+    "loseTitle": "החליפה נפרצה",
+    "winBody": "כל גלי הפלזמה פונו.",
+    "loseBody": "הגושים פגעו בך. אפשר לנסות שוב באותה זירה.",
+    "intermission": "נשימה קצרה",
+    "density": "צפיפות — ההתפצלות נקטעה",
+    "energy": "ניסוי: מאגר אנרגיה משותף",
+    "energyHint": "החנית תמיד זמינה. הרשת צורכת אנרגיה שמתחדשת בזמן הלחימה.",
+    "controls": "A/D או חצים תנועה · W ↑ רווח קפיצה · J ירי (החזקה) · Q/E או 1/2 נשק",
+    "aimNote": "הירי עולה, עם הטיה קלה לכיוון התנועה.",
+    "best": "שיא",
+    "score": "ניקוד",
+    "wave": "גל",
+    "hull": "שלדה",
+    "energyShort": "אנרגיה"
+  }
+}

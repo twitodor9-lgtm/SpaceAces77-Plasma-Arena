@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "weapons": [
+    {
+      "id": "energy_lance",
+      "projectileBehavior": "straight",
+      "direction": "up",
+      "damage": 1,
+      "cooldownMs": 350,
+      "energyCost": 0,
+      "assetId": "lance_placeholder"
+    },
+    {
+      "id": "pulse_net",
+      "projectileBehavior": "area_slow",
+      "direction": "up",
+      "damage": 0,
+      "effect": {
+        "type": "slow",
+        "factor": 0.5,
+        "durationMs": 1100
+      },
+      "cooldownMs": 2200,
+      "energyCost": 0,
+      "assetId": "net_placeholder"
+    }
+  ]
+}

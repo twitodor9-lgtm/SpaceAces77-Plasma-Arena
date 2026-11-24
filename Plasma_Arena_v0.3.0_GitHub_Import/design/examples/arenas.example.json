@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "arenas": [
+    {
+      "id": "plasma_test_01",
+      "label": "Core Arena",
+      "size": {
+        "width": 960,
+        "height": 540
+      },
+      "waves": [
+        {
+          "entities": [
+            {
+              "id": "orb_large",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "entities": [
+            {
+              "id": "orb_large",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "entities": [
+            {
+              "id": "orb_zigzag",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "hazards": [
+        {
+          "id": "barrier_pulse",
+          "x": 480,
+          "y": 420
+        }
+      ],
+      "winCondition": "clear_all_waves"
+    },
+    {
+      "id": "plasma_test_02",
+      "label": "Alternate Layout",
+      "size": {
+        "width": 960,
+        "height": 540
+      },
+      "waves": [
+        {
+          "entities": [
+            {
+              "id": "orb_small",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "entities": [
+            {
+              "id": "orb_zigzag",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "hazards": [
+        {
+          "id": "barrier_pulse",
+          "x": 270,
+          "y": 420
+        }
+      ],
+      "winCondition": "clear_all_waves"
+    }
+  ]
+}

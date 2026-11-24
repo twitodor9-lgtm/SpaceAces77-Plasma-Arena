@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "hazards": [
+    {
+      "id": "barrier_pulse",
+      "label": "שער אנרגיה",
+      "behavior": "timed_barrier",
+      "damage": 1,
+      "assetId": "barrier",
+      "telegraphMs": 800,
+      "activeMs": 1300,
+      "inactiveMs": 1600,
+      "speed": 0
+    },
+    {
+      "id": "moving_beam",
+      "label": "קורה נעה",
+      "behavior": "horizontal_patrol",
+      "damage": 1,
+      "assetId": "beam",
+      "telegraphMs": 560,
+      "activeMs": 0,
+      "inactiveMs": 700,
+      "speed": 220
+    }
+  ]
+}
