@@ -2,6 +2,8 @@
 
 ## v0.4.0-dev (in progress)
 
+- Milestone 2: build/typecheck PASS, offline HTML regenerated, 6 keyboard playtests documented (all losses 14–19s), high targets/mines accessible on Relay Deck, density never capped, fairness of maxBodies=20 / iFrame 900 OK vs v0.3.0.
+
 - **Arcade Feel**: snappier player movement (speed 330, jump −640, coyote 140 ms, buffer 150 ms).
 - Stronger hit feedback (larger knock-up, camera shake, particle burst on damage).
 - Improved pop/split juice (more particles, rise, longer life, shake on mid splits).

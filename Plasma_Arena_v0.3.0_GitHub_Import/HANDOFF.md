@@ -1,6 +1,6 @@
 # HANDOFF — Plasma Arena v0.4.0-dev (Arcade Feel & Balance)
 
-סטטוס: עבודה פעילה על תחושת ארקייד ואיזון על בסיס v0.3.0. מיקום בקמפיין, הכוח שייפתח וסוג הדמות עדיין פתוחים.
+סטטוס: Milestone 1 (Feel) + Milestone 2 (Validation) הושלמו. Build + HTML אופליין מעודכן. 6 playtests מקלדת תועדו. מיקום בקמפיין / כוח / דמות עדיין פתוחים.
 
 | אחריות | מקור |
 |---|---|
@@ -18,5 +18,6 @@
 
 ## המשך
 
-- Milestone 1 (Arcade Feel): תנועה, קפיצה, hit feedback, juice, פיצול ונשקים עודכנו ב־JSON + juice.ts + gameScene.
-- עדיין נדרש: playtests אמיתיים עם מקלדת, מדידת זמן סיבוב מנצח (יעד 90–180s), בדיקת צפיפות ניצוצות וגישה למוקשים ב־Relay Deck, מצב אנרגיה בנפרד.
+- Milestone 1+2 הושלמו: Feel tuning + validation playtests + offline HTML.
+- עדיין נדרש מבעלים: סיבובי ניצחון אנושיים (יעד מנחה 90–180s), מגע פיזי, Safari/Firefox, מצב אנרגיה מעמיק.
+- אין Merge ל־main. Draft PR אופציונלי אחרי סבב בעלים.

@@ -1,0 +1,31 @@
+{
+  "phase": {
+    "kind": "lose",
+    "score": 240,
+    "hull": 0,
+    "type": "result",
+    "ms": 22798
+  },
+  "maxAlive": 3,
+  "sawHighTargets": true,
+  "highIds": [
+    "high"
+  ],
+  "durationSec": 22,
+  "counts": {
+    "shot": 72,
+    "wave": 1,
+    "telegraph": 2,
+    "hazard": 15,
+    "spawn": 6,
+    "split": 2,
+    "pop": 2,
+    "hit": 3,
+    "result": 1
+  },
+  "damageSources": {
+    "plasma": 2,
+    "barrier_pulse": 1
+  },
+  "mineLike": []
+}
