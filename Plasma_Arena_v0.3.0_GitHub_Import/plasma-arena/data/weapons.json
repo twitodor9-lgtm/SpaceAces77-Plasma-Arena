@@ -6,14 +6,14 @@
       "label": "חנית אנרגיה",
       "hint": "פגיעה ישירה כלפי מעלה",
       "behavior": "projectile",
-      "cooldownMs": 280,
+      "cooldownMs": 240,
       "energyCost": 0,
       "projectile": {
         "motion": "straight",
-        "speed": 760,
+        "speed": 820,
         "direction": "aim_up",
         "radius": 6,
-        "lifeMs": 900,
+        "lifeMs": 880,
         "damage": 1,
         "pierce": 1,
         "assetId": "lance",
@@ -25,22 +25,22 @@
       "label": "רשת דופק",
       "hint": "שדה האטה לזמן קצר",
       "behavior": "projectile",
-      "cooldownMs": 1900,
-      "energyCost": 40,
+      "cooldownMs": 1700,
+      "energyCost": 36,
       "projectile": {
         "motion": "straight",
-        "speed": 460,
+        "speed": 500,
         "direction": "aim_up",
-        "radius": 8,
-        "lifeMs": 760,
+        "radius": 9,
+        "lifeMs": 800,
         "damage": 0,
         "pierce": 1,
         "assetId": "net",
         "impact": {
           "behavior": "area_slow",
-          "radius": 92,
-          "durationMs": 1300,
-          "factor": 0.42
+          "radius": 110,
+          "durationMs": 1500,
+          "factor": 0.36
         }
       }
     }

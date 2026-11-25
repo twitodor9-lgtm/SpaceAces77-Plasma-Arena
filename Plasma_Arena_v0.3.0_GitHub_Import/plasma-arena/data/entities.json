@@ -11,8 +11,18 @@
       "score": 150,
       "contactDamage": 1,
       "interaction": "normal",
-      "behaviors": [{ "key": "bounce", "speed": 135, "gravity": 740, "restitution": 1 }],
-      "split": { "childId": "plasma_mid", "count": 2 }
+      "behaviors": [
+        {
+          "key": "bounce",
+          "speed": 145,
+          "gravity": 740,
+          "restitution": 1
+        }
+      ],
+      "split": {
+        "childId": "plasma_mid",
+        "count": 2
+      }
     },
     {
       "id": "plasma_mid",
@@ -24,8 +34,18 @@
       "score": 80,
       "contactDamage": 1,
       "interaction": "normal",
-      "behaviors": [{ "key": "bounce", "speed": 185, "gravity": 860, "restitution": 1 }],
-      "split": { "childId": "plasma_spark", "count": 2 }
+      "behaviors": [
+        {
+          "key": "bounce",
+          "speed": 195,
+          "gravity": 860,
+          "restitution": 1
+        }
+      ],
+      "split": {
+        "childId": "plasma_spark",
+        "count": 2
+      }
     },
     {
       "id": "plasma_spark",
@@ -37,7 +57,14 @@
       "score": 40,
       "contactDamage": 1,
       "interaction": "brittle",
-      "behaviors": [{ "key": "bounce", "speed": 235, "gravity": 980, "restitution": 1 }],
+      "behaviors": [
+        {
+          "key": "bounce",
+          "speed": 210,
+          "gravity": 1020,
+          "restitution": 1
+        }
+      ],
       "split": null
     },
     {
@@ -51,10 +78,22 @@
       "contactDamage": 1,
       "interaction": "normal",
       "behaviors": [
-        { "key": "bounce", "speed": 120, "gravity": 700, "restitution": 1 },
-        { "key": "zigzag", "speed": 160, "period": 1.25 }
+        {
+          "key": "bounce",
+          "speed": 120,
+          "gravity": 700,
+          "restitution": 1
+        },
+        {
+          "key": "zigzag",
+          "speed": 160,
+          "period": 1.25
+        }
       ],
-      "split": { "childId": "plasma_spark", "count": 2 }
+      "split": {
+        "childId": "plasma_spark",
+        "count": 2
+      }
     },
     {
       "id": "plasma_pulse",
@@ -67,10 +106,24 @@
       "contactDamage": 1,
       "interaction": "normal",
       "behaviors": [
-        { "key": "bounce", "speed": 125, "gravity": 720, "restitution": 1 },
-        { "key": "pulse", "burstEveryMs": 2300, "burstMs": 420, "telegraphMs": 420, "burstMul": 1.72 }
+        {
+          "key": "bounce",
+          "speed": 125,
+          "gravity": 720,
+          "restitution": 1
+        },
+        {
+          "key": "pulse",
+          "burstEveryMs": 2300,
+          "burstMs": 420,
+          "telegraphMs": 420,
+          "burstMul": 1.72
+        }
       ],
-      "split": { "childId": "plasma_mid", "count": 2 }
+      "split": {
+        "childId": "plasma_mid",
+        "count": 2
+      }
     },
     {
       "id": "mine_drift",
@@ -82,7 +135,14 @@
       "score": 70,
       "contactDamage": 1,
       "interaction": "resist_slow",
-      "behaviors": [{ "key": "move_horizontal", "speed": 85, "halfRange": 84, "gravity": 0 }],
+      "behaviors": [
+        {
+          "key": "move_horizontal",
+          "speed": 85,
+          "halfRange": 84,
+          "gravity": 0
+        }
+      ],
       "split": null
     }
   ]

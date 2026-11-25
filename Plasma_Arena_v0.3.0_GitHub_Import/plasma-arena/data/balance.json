@@ -4,7 +4,7 @@
     "width": 960,
     "height": 540
   },
-  "maxBodies": 18,
+  "maxBodies": 20,
   "maxShots": 10,
   "maxZones": 4,
   "defaultArenaId": "core_chamber",
@@ -13,35 +13,35 @@
     "pulse_net"
   ],
   "player": {
-    "speed": 300,
-    "jumpVelocity": -580,
-    "gravity": 1150,
+    "speed": 330,
+    "jumpVelocity": -640,
+    "gravity": 1180,
     "hull": 3,
-    "iFrameMs": 1000,
+    "iFrameMs": 900,
     "width": 36,
     "height": 52,
-    "coyoteMs": 100,
-    "jumpBufferMs": 120
+    "coyoteMs": 140,
+    "jumpBufferMs": 150
   },
   "split": {
     "maxGeneration": 4,
-    "childGraceMs": 560,
-    "childPopVelocity": -240,
-    "childSeparation": 36
+    "childGraceMs": 480,
+    "childPopVelocity": -300,
+    "childSeparation": 44
   },
   "spawn": {
-    "telegraphMs": 720,
-    "safeRadius": 160,
-    "staggerMs": 220
+    "telegraphMs": 680,
+    "safeRadius": 150,
+    "staggerMs": 200
   },
   "aim": {
-    "influence": 0.42
+    "influence": 0.48
   },
   "energy": {
     "max": 100,
-    "regenPerSec": 18
+    "regenPerSec": 20
   },
-  "intermissionMs": 1400,
+  "intermissionMs": 1200,
   "strings": {
     "title": "PLASMA ARENA",
     "kicker": "SPACEACES77 · יחידת ניסוי",

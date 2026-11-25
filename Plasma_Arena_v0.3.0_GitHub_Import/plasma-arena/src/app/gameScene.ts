@@ -399,8 +399,9 @@ export class GameScene extends Phaser.Scene {
     this.run = hit.run;
     this.iframeUntil = this.time.now + this.content.balance.player.iFrameMs;
     const body = this.player.body as Phaser.Physics.Arcade.Body;
-    body.setVelocityY(Math.min(body.velocity.y, -180));
-    this.cameras.main.shake(110, 0.007);
+    body.setVelocityY(Math.min(body.velocity.y, -260));
+    this.cameras.main.shake(140, 0.011);
+    burst(this, this.player.x, this.player.y - 10, "#FF5A36", 7);
     session.sfx?.hurt();
     if (hit.lost) this.finish("lose");
   }
@@ -419,15 +420,18 @@ export class GameScene extends Phaser.Scene {
     this.telemetry.record(children ? "split" : "pop", this.time.now, { id: plasma.def.id, children, x, y });
     this.run = addScore(this.run, plasma.score);
     const asset = this.content.assetById.get(plasma.def.assetId);
-    burst(this, x, y, asset?.color ?? "#FF3D8A", plasma.radius > 30 ? 9 : 6);
+    const big = plasma.radius >= 28;
+    burst(this, x, y, asset?.color ?? "#FF3D8A", big ? 12 : children ? 9 : 7);
     this.float(x, y, children ? `+${plasma.score}  ×${children}` : `+${plasma.score}`);
-    session.sfx?.pop(plasma.radius >= 28);
-    if (plasma.radius >= 28) {
-      this.cameras.main.shake(70, 0.004);
-      this.physics.world.timeScale = 1.5;
-      this.time.delayedCall(60, () => {
+    session.sfx?.pop(big);
+    if (big) {
+      this.cameras.main.shake(90, 0.006);
+      this.physics.world.timeScale = 1.55;
+      this.time.delayedCall(70, () => {
         if (this.scene.isActive()) this.physics.world.timeScale = 1;
       });
+    } else if (children) {
+      this.cameras.main.shake(40, 0.003);
     }
   }
 

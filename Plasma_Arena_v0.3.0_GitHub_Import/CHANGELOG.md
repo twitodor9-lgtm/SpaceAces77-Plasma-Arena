@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.4.0-dev (in progress)
+
+- **Arcade Feel**: snappier player movement (speed 330, jump −640, coyote 140 ms, buffer 150 ms).
+- Stronger hit feedback (larger knock-up, camera shake, particle burst on damage).
+- Improved pop/split juice (more particles, rise, longer life, shake on mid splits).
+- Split tuning: shorter child grace, stronger pop velocity, wider separation; maxBodies 20.
+- Weapon differentiation: faster lance, stronger/wider pulse-net slow.
+- Plasma motion: slightly higher mid/heavy cruise, moderated spark speed for density fairness.
+- Spawn telegraph and intermission slightly tighter.
+
 ## v0.3.0
 
 - תיקון שגיאות תחביר וטיפוסים והוספת lockfile עצמאי.
